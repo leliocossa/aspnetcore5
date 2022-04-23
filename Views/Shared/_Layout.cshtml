@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AspNetCore5</title>
+    
+    <partial name="_Styles" />
+    @await RenderSectionAsync("Styles", required: false)
+
+</head>
+<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed">
+    <div class="wrapper">
+        <partial name="_Preloader" />
+        <partial name="_Navbar" />
+        <partial name="_Sidebar" />
+
+        <div class="content-wrapper">
+            <partial name="_Breadcrumb" />
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <partial name="_Footer" />
+
+    </div>
+
+    <partial name="_Scripts" />
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

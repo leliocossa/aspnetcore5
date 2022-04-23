@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Tixx | @ViewData["Title"]</title>
+
+    @await Html.PartialAsync("_UserStyles.cshtml")
+    @await RenderSectionAsync("Styles", required: false)
+
+</head>
+<body class="hold-transition login-page">
+
+            @RenderBody()
+
+    @await Html.PartialAsync("_UserScripts.cshtml")
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
