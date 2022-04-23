@@ -1,1 +1,1 @@
-# Sample Asp.net core 5 Emapty Project
+# Sample Asp.net core 5 Empty Project
